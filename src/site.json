@@ -1,0 +1,43 @@
+{
+  "url": "https://unimik.cz",
+  "name": "UNIMIK s.r.o.",
+  "shortName": "UNIMIK",
+  "ico": "07051565",
+  "dic": "CZ07051565",
+  "founded": "2018",
+  "phones": [
+    { "display": "+420 603 416 025", "short": "603 416 025", "tel": "+420603416025" },
+    { "display": "+420 773 517 779", "short": "773 517 779", "tel": "+420773517779" }
+  ],
+  "emergencyPhoneIndex": 0,
+  "email": "",
+  "seat": {
+    "label": "Sídlo",
+    "street": "Bechlín 216",
+    "zip": "411 86",
+    "city": "Bechlín",
+    "region": "Ústecký kraj",
+    "country": "CZ",
+    "geo": { "lat": 50.4164, "lng": 14.3403 }
+  },
+  "office": {
+    "label": "Kontaktní adresa",
+    "street": "Chelčického 1350",
+    "zip": "413 01",
+    "city": "Roudnice nad Labem"
+  },
+  "areaServed": ["Ústecký kraj"],
+  "themeColor": "#16181B",
+  "nav": [
+    { "label": "Služby", "href": "/#sluzby" },
+    { "label": "Postup", "href": "/#postup" },
+    { "label": "Kontakt", "href": "/kontakt/" }
+  ],
+  "services": [
+    { "slug": "cisteni-nadrzi", "name": "Čištění nádrží", "icon": "droplets", "teaser": "Nádrže na ropné a chemické látky, cisterny, vagony, jímky a lapoly." },
+    { "slug": "revize-a-tesnostni-zkousky", "name": "Revize a těsnostní zkoušky", "icon": "clipboard-check", "teaser": "Revize nádrží a zkoušky těsnosti jímek, nádrží a lapolů." },
+    { "slug": "defektoskopie-a-mereni-tloustky", "name": "Defektoskopie a měření tloušťky stěn", "icon": "scan-line", "teaser": "Ultrazvukové měření tloušťky stěn a hledání vad materiálu." },
+    { "slug": "likvidace-nadrzi-a-cerpacich-stanic", "name": "Likvidace nádrží a čerpacích stanic", "icon": "trash-2", "teaser": "Opravy a likvidace nádrží, vyřazených čerpacích stanic PHL a potrubí." },
+    { "slug": "havarijni-sluzba", "name": "Havarijní služba non-stop", "icon": "siren", "teaser": "Zásah při úniku ropných látek. Volejte kdykoli." }
+  ]
+}

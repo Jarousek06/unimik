@@ -1,0 +1,53 @@
+<!--meta
+{
+  "path": "/havarijni-sluzba/",
+  "title": "Havarijní služba non-stop – únik ropných látek | UNIMIK",
+  "description": "Havarijní služba non-stop při úniku ropných a chemických látek. Odčerpání, vyčištění, likvidace odpadu. Štětí, Litoměřice, Roudnice n. L.",
+  "breadcrumb": [{ "name": "Havarijní služba", "path": "/havarijni-sluzba/" }],
+  "service": { "name": "Havarijní služba non-stop", "type": "Havarijní služba při úniku ropných látek" },
+  "bodyClass": "page-alert"
+}
+-->
+<div class="page-hero page-hero--alert">
+  <div class="wrap">
+    {{breadcrumb}}
+    <h1>Havarijní služba non-stop</h1>
+    <p class="lead">Unikla nafta, olej nebo chemie? Volejte kdykoli, ve dne i v noci.</p>
+    <a class="alert-phone" href="{{emergencyTel}}">{{icon:phone}}{{emergencyPhone}}</a>
+  </div>
+</div>
+
+<section class="section" aria-label="Podrobnosti">
+  <div class="wrap prose-grid">
+    <div class="prose">
+      <h2>Do telefonu řekněte</h2>
+      <ul>
+        <li>Kde se to stalo. Adresa nebo popis místa.</li>
+        <li>Co uniká: nafta, benzín, olej, chemická látka.</li>
+        <li>Odkud: nádrž, cisterna, potrubí, vozidlo.</li>
+        <li>Kolik zhruba a jestli to teče dál.</li>
+      </ul>
+      <h2>Co uděláme</h2>
+      <p>Uniklou látku odčerpáme. <a href="/cisteni-nadrzi/">Vyčistíme</a> nádrž nebo místo úniku. Vzniklý nebezpečný odpad zlikvidujeme.</p>
+      <p>Přečerpáváme tekuté látky všech stupňů hořlavosti. Pracujeme i v nedýchatelném prostředí.</p>
+      <h2>Než přijedeme</h2>
+      <p>Když je to bezpečné, zastavte zdroj úniku. Zabraňte, aby látka tekla do kanálu nebo vodního toku. Při ohrožení lidí volejte nejdřív 112 nebo hasiče na 150.</p>
+      <p>Po havárii doporučujeme <a href="/revize-a-tesnostni-zkousky/">těsnostní zkoušku</a> nádrže.</p>
+      <!-- TODO: client to confirm emergency phone number, arrival times and operating area. -->
+    </div>
+    <div class="side">
+      <aside class="cta-box" aria-label="Havarijní linka">
+        <p class="cta-title">Havárie? Volejte non-stop.</p>
+        <div class="cta-actions">
+          <a class="btn btn--alert" href="{{emergencyTel}}">{{icon:siren}}{{emergencyPhone}}</a>
+        </div>
+      </aside>
+      <div>
+        <h2>Další služby</h2>
+        {{related}}
+      </div>
+    </div>
+  </div>
+</section>
+
+{{include:callback}}

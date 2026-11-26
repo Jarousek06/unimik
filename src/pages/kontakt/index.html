@@ -1,0 +1,51 @@
+<!--meta
+{
+  "path": "/kontakt/",
+  "title": "Kontakt – UNIMIK s.r.o., Bechlín u Štětí",
+  "description": "UNIMIK s.r.o., Bechlín 216 u Štětí. Telefon +420 603 416 025 a +420 773 517 779. Kontaktní adresa Roudnice nad Labem. Havarijní služba non-stop.",
+  "breadcrumb": [{ "name": "Kontakt", "path": "/kontakt/" }]
+}
+-->
+<div class="page-hero">
+  <div class="wrap">
+    {{breadcrumb}}
+    <h1>Kontakt</h1>
+    <p class="lead">Nejrychleji po telefonu. Při havárii volejte kdykoli.</p>
+  </div>
+</div>
+
+<section class="section" aria-label="Kontaktní údaje">
+  <div class="wrap contact-grid">
+    <div class="contact-block">
+      <h2>Telefon</h2>
+      <ul class="phone-list">
+        <li><a class="phone-link" href="{{tel0}}">{{icon:phone}}{{phone0}}</a></li>
+        <li><a class="phone-link" href="{{tel1}}">{{icon:phone}}{{phone1}}</a></li>
+        {{if:email}}<li><a class="phone-link" href="mailto:{{email}}">{{icon:mail}}{{email}}</a></li>{{/if}}
+      </ul>
+      <a class="btn btn--alert" href="{{emergencyTel}}">{{icon:siren}}Havárie non-stop</a>
+    </div>
+    <div class="contact-block">
+      <h2>Adresy</h2>
+      <address>
+        <strong>{{name}}</strong><br>
+        Sídlo: {{seatStreet}}, {{seatZip}} {{seatCity}}<br>
+        <a class="text-link" href="{{mapSeat}}" rel="noopener">{{icon:map-pin}}Sídlo na Mapy.cz</a>
+      </address>
+      <address>
+        Kontaktní adresa: {{officeStreet}}, {{officeZip}} {{officeCity}}<br>
+        <a class="text-link" href="{{mapOffice}}" rel="noopener">{{icon:map-pin}}Kontaktní adresa na Mapy.cz</a>
+      </address>
+    </div>
+    <div class="contact-block">
+      <h2>Firemní údaje</h2>
+      <dl class="dl">
+        <dt>Firma</dt><dd>{{name}}</dd>
+        <dt>IČO</dt><dd>{{ico}}</dd>
+        <dt>DIČ</dt><dd>{{dic}}</dd>
+      </dl>
+    </div>
+  </div>
+</section>
+
+{{include:callback}}

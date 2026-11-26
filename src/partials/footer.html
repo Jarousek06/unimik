@@ -1,0 +1,42 @@
+<footer class="site-footer">
+  <div class="wrap footer-grid">
+    <div class="footer-brand">
+      <img src="/assets/logo-light.svg" width="180" height="48" alt="UNIMIK s.r.o.">
+      <p class="footer-claim">Čištění, revize a likvidace nádrží. Havarijní služba non-stop.</p>
+    </div>
+    <div>
+      <h2 class="footer-h">Kontakt</h2>
+      <ul class="footer-list">
+        <li><a class="footer-tel" href="{{tel0}}">{{icon:phone}}{{phone0}}</a></li>
+        <li><a class="footer-tel" href="{{tel1}}">{{icon:phone}}{{phone1}}</a></li>
+        {{if:email}}<li><a class="footer-tel" href="mailto:{{email}}">{{icon:mail}}{{email}}</a></li>{{/if}}
+      </ul>
+      <address class="footer-addr">
+        <strong>{{name}}</strong><br>
+        Sídlo: {{seatStreet}}, {{seatZip}} {{seatCity}}<br>
+        Kontaktní adresa: {{officeStreet}}, {{officeZip}} {{officeCity}}<br>
+        IČO {{ico}} · DIČ {{dic}}
+      </address>
+    </div>
+    <nav aria-label="Služby v patičce">
+      <h2 class="footer-h">Služby</h2>
+      <ul class="footer-list">
+        <li><a href="/cisteni-nadrzi/">Čištění nádrží</a></li>
+        <li><a href="/revize-a-tesnostni-zkousky/">Revize a těsnostní zkoušky</a></li>
+        <li><a href="/defektoskopie-a-mereni-tloustky/">Defektoskopie a měření tloušťky</a></li>
+        <li><a href="/likvidace-nadrzi-a-cerpacich-stanic/">Likvidace nádrží a čerpacích stanic</a></li>
+        <li><a href="/havarijni-sluzba/">Havarijní služba non-stop</a></li>
+      </ul>
+    </nav>
+    <nav aria-label="Firma">
+      <h2 class="footer-h">Firma</h2>
+      <ul class="footer-list">
+        <li><a href="/kontakt/">Kontakt</a></li>
+        <li><a href="/ochrana-osobnich-udaju/">Ochrana osobních údajů</a></li>
+      </ul>
+    </nav>
+  </div>
+  <div class="wrap footer-base">
+    <p>© {{year}} {{name}}</p>
+  </div>
+</footer>

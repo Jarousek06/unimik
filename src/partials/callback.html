@@ -1,0 +1,49 @@
+<section class="section callback" id="zpetne-volani" aria-labelledby="callback-title">
+  <div class="wrap callback-grid">
+    <div class="callback-intro">
+      <h2 id="callback-title" class="h2">Zavolejte mi zpět</h2>
+      <p class="lead">Nechte jméno a číslo. Ozveme se vám.</p>
+      <p class="callback-direct-label">Nebo volejte rovnou:</p>
+      <ul class="phone-list">
+        <li><a class="phone-link" href="{{tel0}}">{{icon:phone}}{{phone0}}</a></li>
+        <li><a class="phone-link" href="{{tel1}}">{{icon:phone}}{{phone1}}</a></li>
+        {{if:email}}<li><a class="phone-link" href="mailto:{{email}}">{{icon:mail}}{{email}}</a></li>{{/if}}
+      </ul>
+    </div>
+    <form class="form" name="zpetne-volani" method="POST" action="/dekujeme/" data-netlify="true" data-netlify-honeypot="web">
+      <input type="hidden" name="form-name" value="zpetne-volani">
+      <p class="hp" aria-hidden="true"><label>Toto pole nevyplňujte <input name="web" tabindex="-1" autocomplete="off"></label></p>
+      <div class="field">
+        <label for="cb-name">Jméno</label>
+        <input id="cb-name" name="jmeno" type="text" autocomplete="name" required>
+      </div>
+      <div class="field">
+        <label for="cb-phone">Telefon</label>
+        <input id="cb-phone" name="telefon" type="tel" autocomplete="tel" inputmode="tel" required>
+      </div>
+      <div class="field">
+        <label for="cb-service">Služba <span class="opt">(nepovinné)</span></label>
+        <select id="cb-service" name="sluzba">
+          <option value="">Vyberte, pokud víte</option>
+          <option>Čištění nádrže, cisterny nebo vagonu</option>
+          <option>Čištění jímky nebo lapolu</option>
+          <option>Revize nebo těsnostní zkouška</option>
+          <option>Defektoskopie, měření tloušťky stěn</option>
+          <option>Oprava nebo likvidace nádrže</option>
+          <option>Likvidace čerpací stanice</option>
+          <option>Přečerpání látek</option>
+          <option>Jiné</option>
+        </select>
+      </div>
+      <div class="field">
+        <label for="cb-msg">Zpráva <span class="opt">(nepovinné)</span></label>
+        <textarea id="cb-msg" name="zprava" rows="3"></textarea>
+      </div>
+      <div class="field field--check">
+        <input id="cb-consent" name="souhlas" type="checkbox" value="ano" required>
+        <label for="cb-consent">Souhlasím se zpracováním jména a telefonu, abyste mi mohli zavolat. <a href="/ochrana-osobnich-udaju/">Ochrana osobních údajů</a></label>
+      </div>
+      <button class="btn btn--ink btn--block" type="submit">Zavolejte mi zpět</button>
+    </form>
+  </div>
+</section>

@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="cs">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{head:title}}</title>
+<meta name="description" content="{{head:description}}">
+{{head:robots}}
+{{head:canonical}}
+<link rel="preload" href="/assets/fonts/barlow-condensed-700.woff2" as="font" type="font/woff2" crossorigin>
+<style>{{head:css}}</style>
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/favicon-32.png" type="image/png" sizes="32x32">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+<meta name="theme-color" content="{{head:themeColor}}">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="cs_CZ">
+<meta property="og:site_name" content="UNIMIK s.r.o.">
+<meta property="og:title" content="{{head:title}}">
+<meta property="og:description" content="{{head:description}}">
+<meta property="og:url" content="{{head:ogUrl}}">
+<meta property="og:image" content="{{head:ogImage}}">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="UNIMIK – čištění a revize nádrží, havarijní služba non-stop">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="{{head:title}}">
+<meta name="twitter:description" content="{{head:description}}">
+<meta name="twitter:image" content="{{head:ogImage}}">
+{{head:jsonld}}
+</head>
+<body class="{{head:bodyClass}}">
+<a class="skip" href="#obsah">Přeskočit na obsah</a>
+{{include:header}}
+<main id="obsah" tabindex="-1">
+{{content}}
+</main>
+{{include:footer}}
+{{include:callbar}}
+</body>
+</html>
